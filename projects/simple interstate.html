@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI</title>
+<script type="text/javascript">
+function cal(){
+var prin=document.getElementById("p").value;
+var rate=document.getElementById("r").value;
+var time=document.getElementById("t").value;
+var si=(prin*rate*time)/100;
+// alert("si = "+si);
+// document.write("si=",+si);
+// console.log(`simple intereste is : ${si}`)
+document.getElementById("si").innerHTML=si;
+}
+
+</script>
+</head>
+<body align="center" bgcolor="red">
+    <div style="background-color:yellow ;">
+        <p align="center" style="font-size:25px;">
+            SI calculater
+        </p>
+        <div style="background-color: blue ;">
+            AMOUNT<INPUT TYPE="text"  id="p"><BR><BR>
+            RATE IN YEAR<INPUT TYPE="number" id="r"><BR><BR>
+            TIME IN YEAR<INPUT TYPE="number" id="t"><BR><BR>
+            <button onclick="cal()"> RESULT 
+
+            </button>
+        </div>
+    <div style="font-size:25px;">
+        <p>SIMPLE interstate IS :</p>
+        <p id="si" >000</p>
+    </div>
+
+    </div>              
+    
+</body>
+</html>
